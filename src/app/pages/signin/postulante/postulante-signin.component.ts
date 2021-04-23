@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { TokenStorageService} from 'src/app/util/token-storage.service';
 import { PostulanteSigninService } from './postulante-signin.service';
-import { PostulanteSigninRequest, PostulanteSigninResponse } from './postulante-signin-interface';
+import { PostulanteBasicInfoResponse, PostulanteSigninRequest, PostulanteSigninResponse } from './postulante-signin-interface';
 import {Router} from '@angular/router'
 
 @Component({
@@ -38,7 +38,11 @@ export class PostulanteSigninComponent implements OnInit {
    }
    
 
-  ngOnInit(): void {
+  ngOnInit():any {
+    if(this.tokenstorageservice.getToken()){
+      this.isLoggedIn = true;
+    }
+
     
   }
   
@@ -54,8 +58,12 @@ export class PostulanteSigninComponent implements OnInit {
         this.tokenstorageservice.saveToken(data.token);
         this.tokenstorageservice.saveUser(data);
         this.currentUser = this.tokenstorageservice.getUser();
-        
-        
+        if(this.currentUser.idPostulante != null){
+          this.router.navigate(['/login/postulante/profile/basicinfo/'+this.currentUser.idPostulante]);
+        }else{
+          this.router.navigate(['/signin/postulante']);
+        }
+
     });
   }
 

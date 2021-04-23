@@ -12,7 +12,8 @@ import { Ciudades, Sexos, TiposDocumento } from '../../../util/data-lists';
 export class PostulanteSignupComponent implements OnInit{
 
   //Lista de Ciudades ordenados por Nombre creado en util/data-lists
-  Ciudades = Ciudades.sort(function (a, b) {
+
+ Ciudades = Ciudades.sort(function (a, b) {
     if (a.text > b.text) {
       return 1;
     }

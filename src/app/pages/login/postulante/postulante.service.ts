@@ -18,7 +18,7 @@ export class PostulanteService {
   constructor(private http:HttpClient) { }
   
   get(id:any): Observable<any> {
-    return this.http.get(`${baseUrl}/${id}/profile/basicinfo`);
+    return this.http.get(`${baseUrl}/profile/basicinfo/${id}`);
   }
   
 

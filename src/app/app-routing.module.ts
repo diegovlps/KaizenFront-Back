@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'signin/reclutador', component: ReclutadorSigninComponent},
   { path: 'signup/postulante', component: PostulanteSignupComponent},
   { path: 'signup/reclutador', component: ReclutadorSignupComponent},
-  { path: 'login/postulante/:idPostulante/profile/basicinfo', component:PostulanteComponent}
+  { path: 'login/postulante/profile/basicinfo/:idPostulante', component:PostulanteComponent}
 ];
 
 @NgModule({

@@ -47,13 +47,13 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <input type="form-control" class="form-control" list="ciudad" placeholder="Ciudad" 
-                                    formControlName="ciudadUsuario">
+                                    formControlName="ciudadUsuario" >
                                     <datalist id="ciudad">
 										<option *ngFor="let ciudad of Ciudades" value="{{ciudad.value}}">{{ciudad.text}}</option>                             
                                     </datalist>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="form-control" class="form-control form-control-lg" list="tipodocumento" name="tipodocumento" placeholder="Tipo Documento" 
+                                    <input type="form-control" class="form-control form-control-lg" list="tipodocumento" placeholder="Tipo Documento" 
                                     formControlName="tipodocumentoUsuario">
                                     <datalist id="tipodocumento">
                                         <option *ngFor="let tipodocumento of TiposDocumento" value="{{tipodocumento.value}}" required>{{tipodocumento.text}}</option>                               
@@ -63,13 +63,13 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control" placeholder="Número de Documento" 
-                                    formControlName="numerodocumentoUsuario" required>
+                                    formControlName="numerodocumentoUsuario">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="form-control" class="form-control form-control-lg" list="sexo" name="sexo" placeholder="Sexo"
-                                    formControlName="generoUsuario" required>
+                                    <input type="form-control" class="form-control form-control-lg" list="sexo" placeholder="Sexo"
+                                    formControlName="generoUsuario">
                                     <datalist id="sexo">
-										<option *ngFor="let sexo of Sexos" value="{{sexo.value}}" required>{{sexo.text}} </option>               
+										<option *ngFor="let sexo of Sexos" value="{{sexo.value}}">{{sexo.text}} </option>               
                                     </datalist>
                                 </div>
                             </div>
