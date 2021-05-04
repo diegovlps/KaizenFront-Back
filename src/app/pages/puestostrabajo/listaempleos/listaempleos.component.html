@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Empleos - Kaizen Talent</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="José Soplin Roncal" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css" />
+
+    <!-- Selectize Css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/selectize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/nice-select.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- Barra de navegación-->
+    <header id="topnav" class="defaultscroll scroll-active">
+        <!-- Tagline STart -->
+        <div class="tagline">
+            <div class="container">
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!---->
+
+        <!-- Inicio del Menu -->
+        <div class="container">
+            <!-- Inicio del contenedor del logo -->
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logolight.png" alt="" class="logo-light" height="38" />
+                    <img src="assets/images/logo.png" alt="" class="logo-dark" height="38  " />
+                </a>
+            </div>                 
+            <!--<div class="buy-button">
+                <a href="subircv.html" class="btn btn-primary"><i class="mdi mdi-cloud-upload"></i> Subir CV</a>
+            </div>-->
+            <!---->
+            <!-- Fin del contenedor del logo -->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Menu Mobile Responsive-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- Fin del Menu Mobile Responsive-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Menu de Navegación -->   
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="listaempleos.html">Empleos</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Mi Cuenta</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="perfilcandidato.html">Mi Perfil</a></li>
+                            <li><a href="mispostulaciones.html">Mis Postulaciones</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contactanos.html">Contáctanos</a>
+                    </li>
+                </ul><!-- Fin del menú de navegación -->
+            </div><!-- Fin navegación -->
+        </div><!-- Fin del contenedor-->
+        <!-- -->
+    </header><!-- Fin del header -->
+    <!-- Fin de la navbar -->
+
+     <!-- Inicio del home -->
+     <section class="bg-half page-next-level"> 
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center text-white">
+                        <h4 class="text-uppercase title mb-4">Lista de Empleos</h4>
+                        <!-- <ul class="page-next d-inline-block mb-0">
+                            <li><a href="index.html" class="text-uppercase font-weight-bold"> :v </a></li>
+                            <li><a href="#" class="text-uppercase font-weight-bold"> :v </a></li> 
+                            <li>
+                                <span class="text-uppercase text-white font-weight-bold"> :v </span> 
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin del home -->
+
+    <div class="container">
+        <div class="home-form-position">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="home-registration-form job-list-reg-form bg-light shadow p-4 mb-3">
+                        <form class="registration-form">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-briefcase"></i>
+                                        <input type="text" id="exampleInputName1" class="form-control rounded registration-input-box" placeholder="Palabras clave">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <select id="select-country" class="demo-default">
+                                            <option value="">Ciudad</option>
+                                            <option value="Lima">Lima</option>
+                                            <option value="Arequipa">Arequipa</option>
+                                            <option value="Trujillo">Trujillo</option>
+                                            <option value="Cuzco">Cuzco</option>
+                                            <option value="Piura">Piura</option>
+                                            <option value="Tacna">Tacna</option>
+                                            <option value="Tumbes">Tumbes</option>
+                                            <option value="Iquitos">Iquitos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <i class="fa fa-list-alt"></i>
+                                        <select id="select-category" class="demo-default">
+                                            <option value="">Categorías</option>
+                                            <option value="1">Marketing Digital</option>
+                                            <option value="2">Sistemas de Información & Software</option>
+                                            <option value="3">Ingeniería</option>
+                                            <option value="4">Derecho</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="registration-form-box">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Buscar Empleos">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio de lista de trabajos -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title title-line pb-5">Lista de Empleos</h4>
+                        <!-- <p class="text-muted para-desc mx-auto mb-1">Descripción Kaizen</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left-sidebar">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapseOne" class="job-list" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-header" id="headingOne">
+                                        <h6 class="mb-0 text-dark f-18">Fecha de publicación</h6>
+                                    </div>
+                                </a>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio1">Última hora</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="24">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio2">Últimas 24 horas</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="168">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio3">Últimos 7 días</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" value="336">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio4">Últimos 14 días</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input" value="720">
+                                            <label class="custom-control-label ml-1 text-muted" for="customRadio5">Últimos 30 días</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filtro 1 -->
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapsetwo" class="job-list" aria-expanded="true" aria-controls="collapsetwo">
+                                    <div class="card-header" id="headingtwo">
+                                        <h6 class="mb-0 text-dark f-18">Categorías</h6>
+                                    </div>
+                                </a>
+                                <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio7">Desarrollador Web</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio8" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio8">Marketing Digital</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio9" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio9">Ingeniería</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio10" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio10">Derecho</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio11" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio11">Comunicaciones</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio12" name="customRadio1" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio12">Diseño Gráfico</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin filtro 1 -->
+                            <div class="card rounded mt-4">
+                                <a data-toggle="collapse" href="#collapsethree" class="job-list" aria-expanded="true" aria-controls="collapsethree">
+                                    <div class="card-header" id="headingthree">
+                                        <h6 class="mb-0 text-dark f-18">Experiencia</h6>
+                                    </div>
+                                </a>
+                                <div id="collapsethree" class="collapse show" aria-labelledby="headingthree">
+                                    <div class="card-body p-0">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio13" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio13">Sin experiencia laboral</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio14" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio14">1 año a 2 años</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio15" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio15">2 años a 5 años</label>
+                                        </div>
+
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio16" name="customRadio2" class="custom-control-input">
+                                            <label class="custom-control-label ml-1 text-muted f-15" for="customRadio16">5 años a más</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 mt-4 pt-2">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="show-results">
+                                <div class="float-left">
+                                    <h5 class="text-dark mb-0 pt-2 f-18">Mostrando lista de Empleos:</h5>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" >
+                        <div class="col-lg-12 mt-4 pt-2"  *ngFor="let empleo of CurrentEmpleo | paginate: { itemsPerPage: 5, currentPage: p }">
+                            <div class="job-list-box border rounded">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <div class="company-logo-img">
+                                                <img src="{{empleo.logoEmpresa.urlImagen}}" alt="" class="img-fluid mx-auto d-block">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-9">
+                                            <div class="job-list-desc">
+                                                <h6 class="mb-2"><a href="#" class="text-dark">{{empleo.nombrePuestoTrabajo}}</a></h6>
+                                                <p class="text-muted mb-0"><i class="mdi mdi-bank mr-2"></i>Falta Nombre</p>
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item mr-3">
+                                                        <p class="text-muted mb-0"><i class="mdi mdi-map-marker mr-2"></i>{{empleo.direccionEmpresa}} </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <div class="job-list-button-sm text-right">
+                                                <span class="badge badge-success">{{empleo.tipojornadaPuestoTrabajo}}</span>
+
+                                                <div class="mt-3">
+                                                    <a href="detalletrabajo.html" class="btn btn-sm btn-primary">Ver Detalle</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inicio de Lista de trabajos -->
+  
+</body>
+</html>

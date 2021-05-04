@@ -620,6 +620,25 @@ button:not(:disabled) {
   transition: all 0.5s ease;
 }
 
+.form-group .form-controlpass {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #dee2e6;
+  height: 42px;
+  width: 300px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.form-group .mensajepass {
+  margin: 30px;
+  height: 42px;
+  width: 300px;
+  font-size: 13px;
+}
+
 .form-group .form-control:focus, .form-group .form-control.active {
   border-color: #2f55d4;
 }
@@ -1097,11 +1116,11 @@ p {
 #topnav .navbar-toggle span:last-child {
   margin-bottom: 0;
 }
-
+/*Boton de Subir cv - Publicar Empleo*/
 #topnav .buy-button {
   float: right;
   line-height: 68px;
-  padding: 3px 0;
+  padding: 5px 5px;
 }
 
 #topnav .navbar-toggle.open span {
@@ -1605,7 +1624,7 @@ p {
 }
 
 .bg-home {
-  padding: 300px 0px 175px 0px;
+  padding: 200px 0px 100px 0px;
   background-size: cover;
   position: relative;
   background-position: center center;
@@ -2590,3 +2609,5 @@ hr {
   border-top: 1px solid #333744;
 }
 /*# sourceMappingURL=style.css.map */
+
+

@@ -112,8 +112,7 @@ export const Ciudades: Ciudades[] = [
 
 export const TiposDocumento: TiposDocumento[] = [
     { value: 'DNI', text: 'DNI' },
-    { value: 'Pasaporte', text: 'Pasaporte' },
-    { value: 'Carnet de Extranjeria', text: 'Carnet de Extranjeria' }
+    { value: 'Pasaporte', text: 'Pasaporte' }
 ]
 
 export const Sexos: Sexos[] = [
@@ -122,7 +121,7 @@ export const Sexos: Sexos[] = [
     { value: 'Otros', text: 'Otros' }
 ]
 
-//en minuscula se muestra repetido
+//En minuscula se muestra repetido
 export const Tempresa: Tempresa[] = [
     { value: '1 a 5 Empleados', text: '1 a 5 Empleados' },
     { value: '5 a 20 Empleados', text: '5 a 20 Empleados' },

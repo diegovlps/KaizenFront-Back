@@ -17,16 +17,16 @@ Autor: José Soplin Roncal
     }); 
 
     // Selectize
-    $('#select-category, #select-lang,#select-country').selectize({
+   /* $('#select-category, #select-lang,#select-country').selectize({
         create: true,
         sortField: {
             field: 'text',
             direction: 'asc'
         },
         dropdownParent: 'body'
-    });
+    });*/
 
-    // Checkbox all select
+    // Seleccionar todos los checkboxs
     $("#customCheckAll").click(function() {
         $(".all-select").prop('checked', $(this).prop('checked'));
     });
@@ -34,7 +34,7 @@ Autor: José Soplin Roncal
     // Nice Select
     $('.nice-select').niceSelect();
 
-    // Back to top
+    // Volver Arriba
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn();
@@ -46,5 +46,6 @@ Autor: José Soplin Roncal
         $("html, body").animate({ scrollTop: 0 }, 3000);
         return false;
     });
+
 
 })(jQuery)

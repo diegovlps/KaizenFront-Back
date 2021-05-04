@@ -24,8 +24,10 @@ export interface PostulanteBasicInfoResponse {
     ciudadPostulante: string;
     tipodocumentoPostulante: string;
     numerodocumentoPostulante: string;
-    fecharegistroPostulante: any;
+    fecharegistroPostulante: any; //date
     generoPostulante: string;
     fotoperfilPostulante?: ImagenInterface;
     archivocvPostulante?: ArchivoCVInterface;
 }
+
+

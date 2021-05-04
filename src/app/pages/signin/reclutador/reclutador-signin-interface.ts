@@ -19,13 +19,15 @@ export interface ReclutadorSigninResponse {
 }
 
 export interface ReclutadorBasicInfoResponse {
-    nombreReclutador: string;
-    ciudadReclutador: string;
+    nombreReclutador: string;//s
+    ciudadReclutador: string;//s
     tipodocumentoReclutador: string;
-    numerodocumentoReclutador: string;
-    telefonoReclutador: string;
-    fecharegistroReclutador: Date;
-    contactanteReclutador: string;
-    tamañoempresaReclutador: string;
-    logoempresaReclutador: ImagenInterface;
+    numerodocumentoReclutador: string;//s
+    telefonoReclutador: string;//s
+    fecharegistroReclutador: any;//s
+    contactanteReclutador: string;//s
+    tamanioempresaReclutador: string;//s
+    descripcionReclutador: string;
+    emailReclutador: string;
+    logoempresaReclutador?: ImagenInterface;
 }

@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { PostulanteSignupService } from './postulante-signup.service';
 import { PostulanteSignupRequest } from './postulante-signup-interface';
 import { Ciudades, Sexos, TiposDocumento } from '../../../util/data-lists';
+import { Router} from '@angular/router'
 
 @Component({
   selector: 'app-postulante-signup',
@@ -12,8 +13,7 @@ import { Ciudades, Sexos, TiposDocumento } from '../../../util/data-lists';
 export class PostulanteSignupComponent implements OnInit{
 
   //Lista de Ciudades ordenados por Nombre creado en util/data-lists
-
- Ciudades = Ciudades.sort(function (a, b) {
+  Ciudades = Ciudades.sort(function (a, b) {
     if (a.text > b.text) {
       return 1;
     }
@@ -81,7 +81,8 @@ export class PostulanteSignupComponent implements OnInit{
   });
   
   constructor(private fb: FormBuilder,
-              private postulantesignupService: PostulanteSignupService) { }
+              private postulantesignupService: PostulanteSignupService,
+              private route:Router) { }
 
   ngOnInit(): void {}
 
@@ -142,6 +143,7 @@ export class PostulanteSignupComponent implements OnInit{
     this.postulantesignupService.SignUpPostulante(usuario, this.subirFotoPerfil(), this.subirArchivoCV()).subscribe(
       data => { 
         console.log(data);
+        this.route.navigate(['signin/postulante']);
         this.signupSuccess = true; 
       },
 

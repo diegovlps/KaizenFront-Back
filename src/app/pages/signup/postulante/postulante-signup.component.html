@@ -37,17 +37,17 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control" placeholder="Nombre(s)" 
-                                    formControlName="nombreUsuario">
+                                    formControlName="nombreUsuario" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control" placeholder="Apellidos" 
-                                    formControlName="apellidoUsuario">
+                                    formControlName="apellidoUsuario" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <input type="form-control" class="form-control" list="ciudad" placeholder="Ciudad" 
-                                    formControlName="ciudadUsuario" >
+                                    formControlName="ciudadUsuario" required>
                                     <datalist id="ciudad">
 										<option *ngFor="let ciudad of Ciudades" value="{{ciudad.value}}">{{ciudad.text}}</option>                             
                                     </datalist>
@@ -63,13 +63,13 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control" placeholder="Número de Documento" 
-                                    formControlName="numerodocumentoUsuario">
+                                    formControlName="numerodocumentoUsuario" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="form-control" class="form-control form-control-lg" list="sexo" placeholder="Sexo"
-                                    formControlName="generoUsuario">
+                                    formControlName="generoUsuario" required>
                                     <datalist id="sexo">
-										<option *ngFor="let sexo of Sexos" value="{{sexo.value}}">{{sexo.text}} </option>               
+										<option *ngFor="let sexo of Sexos" value="{{sexo.value}}" required>{{sexo.text}} </option>               
                                     </datalist>
                                 </div>
                             </div>
@@ -123,9 +123,6 @@
             </div>
         </div>
     </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
 </body>
 </html>

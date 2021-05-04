@@ -3,10 +3,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { TokenStorageService } from 'src/app/util/token-storage.service';
 import { ReclutadorSigninRequest } from './reclutador-signin-interface';
 import { ReclutadorSigninService } from './reclutador-signin.service';
-//import { PostulanteSigninService } from './postulante-signin.service';
-//import { PostulanteSigninRequest } from './postulante-signin-interface';
-
-
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-reclutador-signin',
@@ -15,6 +12,8 @@ import { ReclutadorSigninService } from './reclutador-signin.service';
 })
 
 export class ReclutadorSigninComponent implements OnInit {
+  currentUser:any;
+  isLoggedIn:any;
 
      
   public reclutadorloginForm = this.fb.group({     
@@ -35,7 +34,8 @@ export class ReclutadorSigninComponent implements OnInit {
 
   constructor(private tokenstorageservice:TokenStorageService
                 ,private Reclutador:ReclutadorSigninService
-                ,private fb: FormBuilder) {
+                ,private fb: FormBuilder
+                ,private router:Router) {
    }
 
 
@@ -54,8 +54,11 @@ export class ReclutadorSigninComponent implements OnInit {
       data => {
         this.tokenstorageservice.saveToken(data.token);
         this.tokenstorageservice.saveUser(data);
+        this.currentUser = this.tokenstorageservice.getUser();
+        this.router.navigate(['/login/reclutador/'+ this.currentUser.idReclutador +'/profile/basicinfo'])
         console.log(data);
     });
   }
 
 }
+

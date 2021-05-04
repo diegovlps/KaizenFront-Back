@@ -53,7 +53,8 @@
                             </div>
                             <div class="row">                                
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" class="form-control" placeholder="Número telefónico" required>
+                                    <!--falta guardar el telefono-->
+                                    <input type="text" class="form-control" placeholder="Número telefónico" formControlName="telefonoUsuario" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control" placeholder="RUC" formControlName="numerodocumentoUsuario" required>
@@ -66,7 +67,7 @@
                             </div>
                             <div class="row">                              
                                 <div class="col-12 col-sm-6">
-                                    <input type="form-control" class="form-control form-control-lg" list="tamanioempresa" placeholder="Tamaño de la empresa" formControlName ="tamañoempresaUsuario" required>
+                                    <input type="form-control" class="form-control form-control-lg" list="tamanioempresa" name="tamanioempresa" placeholder="Tamaño de la empresa" formControlName ="tamañoempresaUsuario" required>
                                     <datalist id="tamanioempresa">
                                         <option *ngFor="let tamanioempresa of Tempresas" value="{{tamanioempresa.value}}">{{tamanioempresa.text}}</option>       
                                     </datalist>
@@ -99,9 +100,5 @@
             </div>
         </div>
     </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

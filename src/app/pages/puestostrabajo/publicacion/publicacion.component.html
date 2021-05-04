@@ -1,0 +1,32 @@
+<form  [formGroup]="puestostrabajoform" (ngSubmit)="Publicarempleo()">
+    <p>nombre trabajo: </p>
+    <input type="text" class="form-control"  formControlName="nombrePuestoTrabajo"  required>
+    <hr>
+    <p>ciudad trabajo: </p>
+    <input type="text" class="form-control"  formControlName="ciudadPuestoTrabajo"  required>
+    <hr>
+    <p>categoria trabajo: </p>
+    <input type="text" class="form-control"  formControlName="categoriaPuestoTrabajo" required>
+    <hr>
+    <p>periodo trabajo(quincenal): </p>
+    <input type="text" class="form-control"  formControlName="periodopublicidadPuestoTrabajo" required>
+    <hr>
+    <p>trabajo remoto</p>
+    <input type="text" class="form-control"  formControlName="trabajoremotoPuestoTrabajo"  required>
+    <hr>
+    <p>tipo jornada: </p>
+    <input type="text" class="form-control"  formControlName="tipojornadaPuestoTrabajo" required>
+    <hr>
+    <p>sueldo: </p>
+    <input type="text" class="form-control"  formControlName="sueldoPuestoTrabajo"  required>
+    <hr>
+    <p>experiencia trabajo: </p>
+    <input type="number" class="form-control"  formControlName="experienciaPuestoTrabajo" required>
+    <hr>
+    <p>descripcion trabajo: </p>
+    <input type="text" class="form-control"  formControlName="descripcionPuestoTrabajo" required>
+    <hr>
+    
+
+    <button type="submit" class="btn btn-success" >Ok!</button>
+</form>

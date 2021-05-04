@@ -34,7 +34,7 @@
                         <h3>Inicia Sesión.</h3>
                         <p>Ingresa los datos de la empresa para iniciar sesión.</p>
                         <div class="page-links">
-                            <a href="loginpostulante.html" class="active">Login</a><a href="registroreclutador.html">Regístrate</a>
+                            <a href="loginreclutador.html" class="active">Login</a><a href="registroreclutador.html">Regístrate</a>
                         </div>
                         <!--<div class="alert alert-warning alert-dismissible fade show with-icon" role="alert">
                            Llena tu información para iniciar sesión
@@ -50,7 +50,7 @@
                                 
                                 <br>
                                 <br>
-                                <a href="passwordolvidado.html">¿Olvidaste tu contraseña?</a>
+                                <a [routerLink]="['/changepassword']">¿Olvidaste tu contraseña?</a>
                                 <br>
                                 <br>
                                 <a [routerLink]="['/signup/reclutador']">¿No estás Registrado?, Regístrate aquí</a>
@@ -61,9 +61,6 @@
             </div>
         </div>
     </div>
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/popper.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/main.js"></script>
+
 </body>
 </html>
